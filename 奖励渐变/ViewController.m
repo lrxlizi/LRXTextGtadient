@@ -8,7 +8,6 @@
 
 #import "ViewController.h"
 #import "Healp.h"
-#import "CRGradientLabel.h"
 
 #define LColor(r,g,b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1.0f]
 
@@ -31,11 +30,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor yellowColor];
     
-    //左上角view
-//    self.leftTopView = [[UIView alloc]initWithFrame:CGRectMake(30, 20, 100, 20)];
-//    self.leftTopView.backgroundColor = [UIColor greenColor];
-//    [self.view addSubview:self.leftTopView];
-//    [self.view bringSubviewToFront:self.leftTopView];
+
     
     self.timeLB = [[UILabel alloc]initWithFrame:CGRectMake(-50,-20, 100, 40)];
      self.timeLB.layer.anchorPoint = CGPointMake(0, 0);
@@ -45,10 +40,7 @@
     self.timeLB.textAlignment = NSTextAlignmentCenter;
     self.timeLB.textColor = [UIColor blackColor];
     self.timeLB.font = [UIFont systemFontOfSize:30*XY];
-//    self.timeLB.layer.cornerRadius = 20;
-//    self.timeLB.layer.masksToBounds = YES;
- 
-    
+
     
     
     
