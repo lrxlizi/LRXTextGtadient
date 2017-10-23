@@ -9,14 +9,13 @@
 #import "Healp.h"
 
 @implementation Healp
-+(void)TextGradientview:(UIView *)view bgVIew:(UIView *)bgVIew gradientColors:(NSArray *)colors gradientStartPoint:(CGPoint)startPoint endPoint:(CGPoint)endPoint locations:(NSArray *)locationArr{
++(void)TextGradientview:(UIView *)view bgVIew:(UIView *)bgVIew gradientColors:(NSArray *)colors gradientStartPoint:(CGPoint)startPoint endPoint:(CGPoint)endPoint {
     
     CAGradientLayer* gradientLayer1 = [CAGradientLayer layer];
     gradientLayer1.frame = view.frame;
     gradientLayer1.colors = colors;
     gradientLayer1.startPoint =startPoint;
     gradientLayer1.endPoint = endPoint;
-    gradientLayer1.locations =locationArr;
     [bgVIew.layer addSublayer:gradientLayer1];
     gradientLayer1.mask = view.layer;
     view.frame = gradientLayer1.bounds;

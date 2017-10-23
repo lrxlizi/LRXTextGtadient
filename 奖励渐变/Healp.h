@@ -10,5 +10,5 @@
 #import <UIKit/UIKit.h>
 
 @interface Healp : NSObject
-+(void)TextGradientview:(UIView *)view bgVIew:(UIView *)bgVIew gradientColors:(NSArray *)colors gradientStartPoint:(CGPoint)startPoint endPoint:(CGPoint)endPoint locations:(NSArray *)locationArr;
++(void)TextGradientview:(UIView *)view bgVIew:(UIView *)bgVIew gradientColors:(NSArray *)colors gradientStartPoint:(CGPoint)startPoint endPoint:(CGPoint)endPoint ;
 @end
